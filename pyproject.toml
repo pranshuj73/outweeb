@@ -1,0 +1,12 @@
+[project]
+name = "outweeb"
+version = "0.1.0"
+description = "attempt 1 at building a RAG"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-community>=0.4.1",
+    "langchain-google-genai>=3.2.0",
+    "langchain-qdrant>=1.1.0",
+    "qdrant-client>=1.16.1",
+]
