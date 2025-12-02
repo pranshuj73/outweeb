@@ -19,6 +19,7 @@ def ingest_data(file_path, collection_name):
 
 
     embedding_model = get_embedding_model()
+
     vector_store = QdrantVectorStore.from_documents(
         documents=split_docs,
         url=os.environ.get("QDRANT_URL", "http://localhost:6333"),
